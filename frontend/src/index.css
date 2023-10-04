@@ -1,0 +1,6 @@
+body{
+    background-image: url('../src/assets/tccGym.png') !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+    background-attachment: fixed  !important;
+  } 

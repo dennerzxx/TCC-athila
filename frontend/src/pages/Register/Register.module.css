@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: #191850;
+	/* overflow-y: hidden !important; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	transition: 0.5s ease;
+}
+
+a:hover {
+	color: #191850;
+}
+
+.form {
+	/* background: #12141d; */
+	padding: 40px;
+	max-width: 1000px;
+	margin: 40px auto;
+	border-radius: 15px;
+	/* box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3); */
+	margin: auto;
+}
+
+.tabgroup {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+	
+}
+
+.tabgroup:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.tabgroup li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: rgba(160, 179, 176, .25);
+	color: #a0b3b0;
+	font-size: 20px;
+	float: left;
+	width: 48%;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-left: 5px;
+	transition: 0.5s ease;
+	
+}
+
+.tabgroup li .tabactive {
+	background-color: #191850;
+}
+
+.tabgroup li a:hover {
+	background: #25237c;
+	color: #fff;
+	transform: scale(1.03);
+    transition: all 0.5s;
+}
+
+.tabgroup .active a {
+	background: #25237c;
+	color: #fff;
+}
+
+/* .tabcontent > div:last-child {
+	 display: none;
+} */
+.tabgroup {
+	border-radius: 15px !important;
+	margin: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	margin: 0 0 40px;
+}
+
+input,
+textarea {
+	font-size: 17px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px 10px;
+	background: none;
+	background-image: none;
+	border: 2px solid #25237c;
+	color: #fff;
+	border-radius: 6px;
+	transition: border-color 0.25s ease, box-shadow 0.25s ease;
+	
+}
+
+textarea {
+	border: 2px solid #01939c;
+	resize: vertical;
+	
+}
+
+.fieldwrap {
+	position: relative;
+	margin-bottom: 40px;
+	
+}
+
+.toprow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.toprow>div {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.toprow>div:last-child {
+	margin: 0;
+}
+
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 15px;
+	padding: 15px 0;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	background: #191850;
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	transition: all 0.5s ease;
+	-webkit-appearance: none;
+}
+
+.button:hover,
+.button:focus {
+	background: #25237c;
+	transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.buttonblock {
+	display: block;
+	width: 100%;
+}
+
+.forgot {
+	margin-top: -20px;
+	text-align: right;
+}
+
+/* Inicio.module.css */
+.backgroundContainer {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+	
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .degradeOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* Ajuste a altura do degradê conforme necessário */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    /* Add styling for the content */
+  }
+  
